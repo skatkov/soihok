@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "pure-offset" %>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
