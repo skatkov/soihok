@@ -7,11 +7,11 @@ title: Soihok - your shop for happines!
     = image_tag 'logo.png', :width=> '150', :class => 'logo'
     .hero__title
       %h1
-        Beaty. Health. Happiness.
+        = t('hero.title')
     .hero__subtitle
-      We're a friendly online brand with eco-friendly hand-crafted products for your maximum enjoyment.
+      = t('hero.subtitle')
     .hero__buttons
-      = link_to "Our products", "#products", :class => "pure-button"
+      = link_to "See products", "#products", :class => "pure-button"
       = link_to "or read about us ...", "#about_us", :title => "read about us", :class => 'secondary-button'
   #about_us.about_us__wrap
     %p
@@ -25,14 +25,20 @@ title: Soihok - your shop for happines!
       %li Products that all family approves and actively uses
       %li Eco-friendly, handmade 
     %p
-      We're also partnering with companies that satisfy those requirements [link: "http://euphorbia.soihok.com/"]
+      We're also partnering with companies that satisfy those requirements, e.g. 
+      = link_to 'Euphorbia', "http://euphorbia.soihok.com/"
   #products.products__wrap
-    .products_title
-      %h2 Products
-    .products_subtitle
-      Comming soon ...
-  .footer_wrap
+    .products__title
+      .line
+      %h3
+        = t('products.title')
+      .line
+    .products__subtitle
+      Comming soon...
+    .products__footer
+      = image_tag 'arrow.svg'
+  .footer__wrap
     %p
-      For non-project related enquiries, contact us at hello@soihok.com
+      = t('footer.text')
     %p
       Facebook, Line

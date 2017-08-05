@@ -7,6 +7,8 @@ end
 
 activate :livereload
 
+activate :i18n
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
