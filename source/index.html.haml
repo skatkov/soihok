@@ -1,7 +1,3 @@
---- 
-title: Soihok - your shop for happines! 
----
-
 .container
   .hero__wrap
     = image_tag 'logo.png', :width=> '150', :class => 'logo'
@@ -11,8 +7,8 @@ title: Soihok - your shop for happines!
     .hero__subtitle
       = t('hero.subtitle')
     .hero__buttons
-      = link_to "See products", "http://euphorbia.soihok.com/", :class => "pure-button"
-      = link_to "or read about us ...", "http://euphorbia.soihok.com/", :title => "read about us", :class => 'secondary-button'
+      = link_to "See products","#products" , :class => "pure-button"
+      = link_to "or read about us ...", "#about_us", :title => "read about us", :class => 'secondary-button'
   
   #about_us.about_us__wrap
     %p
@@ -58,6 +54,7 @@ title: Soihok - your shop for happines!
       = image_tag 'arrow.svg'
   .footer__wrap
     %p
-      = t('footer.text')
-    %p
-      Facebook, Line
+      = t('footer.text') + " hello@soihok.com"
+    .social
+      Facebook,
+      .line-it-button(:style="display: none;" data-lang="en" data-type="friend" data-lineid="soihok6")
