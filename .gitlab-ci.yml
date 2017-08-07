@@ -1,0 +1,10 @@
+before_script:
+  - ruby -v
+  - which ruby
+  - gem install bundler --no-ri --no-rdoc
+  - bundle install
+
+deploy:
+  script:
+    - bundle exec middleman build;
+    - bundle exec middleman s3_sync;
