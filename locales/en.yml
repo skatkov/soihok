@@ -5,7 +5,26 @@ en:
   hero:
     title: "Beauty. Health. Happiness."
     subtitle: "We're a friendly online brand with eco-friendly hand-crafted products for your maximum enjoyment."
+    products_button: "See products"
+    about_us_button: "or read about us ..."
+  about_us: "
+    <p>
+      Our brand is dedicated to providing best quality hand made products.
+      This is family run business, our story started at a small friendly shop in Thailand.
+      And we're dedicated to be that small friendly soi shop with handpicked products, but in internet. 
+    </p>
+    <p>
+      We belive in doing business responsibly. This is why all our products satisfy these requirements.
+    </p>
+    <ul>
+      <li> Locally sourced from independent manufacturer </li>
+      <li> Products that all family approves and actively uses </li>
+      <li> Eco-friendly, handmade </li>
+    </ul>  
+    <p>
+      We're also partnering with companies that satisfy those requirements, e.g. <a href='http://euphorbia.soihok.com/'>Euphorbia</a>
+    </p>"
   products:
     title: 'Products'
   footer:
-    text: "For enquiries, contact us at"
+    contact_us: "For enquiries, contact us at"

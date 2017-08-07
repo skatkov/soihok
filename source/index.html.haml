@@ -7,23 +7,11 @@
     .hero__subtitle
       = t('hero.subtitle')
     .hero__buttons
-      = link_to "See products","#products" , :class => "pure-button"
-      = link_to "or read about us ...", "#about_us", :title => "read about us", :class => 'secondary-button'
+      = link_to t('hero.products_button'),"#products" , :class => "pure-button"
+      = link_to t('hero.about_us_button'), "#about_us", :title => "read about us", :class => 'secondary-button'
   
   #about_us.about_us__wrap
-    %p
-      Our brand is dedicated to providing best quality hand made products.
-      This is family run business, our story started at a small friendly shop in Thailand.
-      And we're dedicated to be that small friendly soi shop with handpicked products, but in internet. 
-    %p 
-      We belive in doing business responsibly. This is why all our products satisfy these requirements.
-    %ul
-      %li Locally sourced from independent manufacturer
-      %li Products that all family approves and actively uses
-      %li Eco-friendly, handmade 
-    %p
-      We're also partnering with companies that satisfy those requirements, e.g. 
-      = link_to 'Euphorbia', "http://euphorbia.soihok.com/"
+    = t(:about_us)
   #products.products__wrap
     .products__title
       .line
@@ -54,7 +42,7 @@
       = image_tag 'arrow.svg'
   .footer__wrap
     %p
-      = t('footer.text') + " hello@soihok.com"
+      = t('footer.contact_us') + " hello@soihok.com"
     .social
       Facebook,
       .line-it-button(:style="display: none;" data-lang="en" data-type="friend" data-lineid="soihok6")
