@@ -11,17 +11,18 @@ title: Soihok - your shop for happines!
     .hero__subtitle
       = t('hero.subtitle')
     .hero__buttons
-      = link_to "See products", "#products", :class => "pure-button"
-      = link_to "or read about us ...", "#about_us", :title => "read about us", :class => 'secondary-button'
+      = link_to "See products", "http://euphorbia.soihok.com/", :class => "pure-button"
+      = link_to "or read about us ...", "http://euphorbia.soihok.com/", :title => "read about us", :class => 'secondary-button'
+  
   #about_us.about_us__wrap
     %p
       Our brand is dedicated to providing best quality hand made products.
-      This is family run business, our family started at a small friendly shop at Thai soi number 6.
-      And we're dedicated to be that small friendly soi shop, but in internet. 
+      This is family run business, our story started at a small friendly shop in Thailand.
+      And we're dedicated to be that small friendly soi shop with handpicked products, but in internet. 
     %p 
-      We belive in doing business with passion. This is why all our products to satisfy these requirements.
+      We belive in doing business responsibly. This is why all our products satisfy these requirements.
     %ul
-      %li All products locally sourced (Thailand) from independent manufacturer
+      %li Locally sourced from independent manufacturer
       %li Products that all family approves and actively uses
       %li Eco-friendly, handmade 
     %p
@@ -33,8 +34,26 @@ title: Soihok - your shop for happines!
       %h3
         = t('products.title')
       .line
-    .products__subtitle
-      Comming soon...
+    .products__list.pure-g
+      .pure-u-1-2
+        .product-body.left
+          .product-field
+            name
+          .product-field.nth
+            type
+          .product-field
+            ingredients
+          
+      .pure-u-1-2
+        .product-body.right
+          .product-field
+            name
+          .product-field.nth
+            type
+          .product-field 
+            ingredients
+        
+      
     .products__footer
       = image_tag 'arrow.svg'
   .footer__wrap
