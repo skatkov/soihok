@@ -31,24 +31,15 @@ a:hover {
   border-bottom-width: 1px;
 }
 
-
 .pure-button {
   border-radius: 6px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  vertical-align: center;
   background: $special;
   color: $white;
-  font-size: 17.5px;
   font-weight: 600;
-  height: 45.85px;
   padding-left: 26.25px;
   padding-right: 26.25px;
   text-transform: uppercase;
-  align-items: center;
-  box-sizing: border-box;
-  display: inline-block;
-  justify-content: center;
 }
 
 .container {
