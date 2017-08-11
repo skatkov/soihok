@@ -135,6 +135,13 @@ a:hover {
   text-align: center;
   padding-bottom: 4em;
   padding-top: 4em;
+
+  a {  
+    border-bottom-color: none;
+    border-bottom-style: none;
+    border-bottom-width: none;
+  }
+  
   p {
     font-size: 1em;
     font-weight: 300;
