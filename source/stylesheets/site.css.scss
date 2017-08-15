@@ -1,9 +1,20 @@
 // palette rip off from here http://www.colourlovers.com/palette/359978/w_o_r_d_l_e_s_s_.
-
 $white: #FFFFFF;
 $special: #CBE86B;
 $grey: #F2E9E1;
 $dark: #1C140D;
+
+@mixin upcase-text(){
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+@mixin title-radius(){
+  font-size: .875rem;
+  border-radius: 6px;  
+  text-align: center;
+}
+
 
 body {
   background-color: $white;
@@ -16,11 +27,9 @@ body {
 
 a {
   text-decoration: none;
-
   border-bottom-color: $grey;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-
   color: $dark;
 }
 
@@ -32,13 +41,12 @@ a:hover {
 
 .pure-button {
   border-radius: 6px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: $special;
   color: $white;
   font-weight: 600;
   padding-left: 26.25px;
   padding-right: 26.25px;
-  text-transform: uppercase;
+  @include upcase-text();
 }
 
 .container {
@@ -82,17 +90,32 @@ a:hover {
 .products__wrap {
   padding-bottom: 2em;
   padding-top: 4em;
+  
+  .field-name {
+    background-color: $grey;
+    @include title-radius();
+    @include upcase-text();
+  }
+
+  .field-content {
+    padding-top: .875rem;
+  }
+  
   .nth {
     background-color: $grey;
+    
+    .field-name {
+      background-color: $white;
+      @include title-radius();
+      @include upcase-text();
+    }
   }
   .product-body.left {
     margin-right: 25px;
   }
   .product-body.right {
     margin-left: 25px;
-
-  } 
-  
+  }
   .product-body {
     border: 1px solid $grey;
     border-radius: 6px;
@@ -134,13 +157,11 @@ a:hover {
   text-align: center;
   padding-bottom: 4em;
   padding-top: 4em;
-
-  a {  
+  a {
     border-bottom-color: none;
     border-bottom-style: none;
     border-bottom-width: none;
   }
-  
   p {
     font-size: 1em;
     font-weight: 300;

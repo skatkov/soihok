@@ -20,27 +20,12 @@
   .products__list.pure-g
     .pure-u-1-2
       .product-body.left
-        .product-field
-          Mint Soap
-        .product-field.nth
-          For normal, sensitive and mature skin types
-        .product-field
-          soap herbal products exfoliate, remove dead skin cells, absorb toxins and remove impurities from the skin pores
-        .product-field.nth
-          jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water, lye
-        
+        = partial(:product, :locals => { :name => "Mint Soap", :type => "For normal, sensitive and mature skin types", :ingredients => "jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water, lye", :description => "soap herbal products exfoliate, remove dead skin cells, absorb toxins and remove impurities from the skin pores"})
+
     .pure-u-1-2
       .product-body.right
-        .product-field
-          Coffee Soap
-        .product-field.nth
-          for normal, sensitive and mature skin types
-        .product-field 
-          coffee is readily absorbed by the skin and has an extremely light and silky feel. Coffee oil is known as anti-inflammatory, skin-softening and its excellent moisture retention properties. Scrub your skin smooth with the coffee side to leave skin soft.
-        .product-field.nth
-          coffee beans, palm oil, coconut oil, castor oil, olive oil, canola oil, tamarind, honey
-      
-    
+        = partial(:product, :locals => {:name => "Coffee Soap", :type => "for normal, sensitive and mature skin types", :ingredients => "coffee beans, palm oil, coconut oil, castor oil, olive oil, canola oil, tamarind, honey", :description => "coffee is readily absorbed by the skin and has an extremely light and silky feel. Coffee oil is known as anti-inflammatory, skin-softening and its excellent moisture retention properties. Scrub your skin smooth with the coffee side to leave skin soft.", })
+
   .products__footer
     = image_tag 'arrow.svg'
 .footer__wrap
