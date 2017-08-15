@@ -7,7 +7,7 @@ end
 
 activate :livereload
 
-activate :i18n
+activate :i18n, mount_at_root: :en, langs: [:en, :th]
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
