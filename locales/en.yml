@@ -1,12 +1,12 @@
 ---
 en:
   page:
-    title: Soihok - your shop for happines! 
+    title: Soihok - your shop for happines!
   hero:
     title: "Beauty. Health. Happiness."
     subtitle: "We're a friendly online brand with eco-friendly hand-crafted products for your maximum enjoyment."
     products_button: "See products"
-    about_us_button: "or read about us ..."
+    about_us_button: "read about us"
   about_us: "
     <p>
       Our brand is dedicated to providing best quality hand made products.
@@ -20,7 +20,7 @@ en:
       <li> Locally sourced from independent manufacturer </li>
       <li> Products that all family approves and actively uses </li>
       <li> Eco-friendly, hand-made </li>
-    </ul>  
+    </ul>
     <p>
       We're also partenring with other brands, that align with our vision , e.g. <a href='http://euphorbia.soihok.com/'>Euphorbia</a>
     </p>"

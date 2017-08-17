@@ -1,0 +1,21 @@
+#products.products__wrap
+  .products__title
+    .line
+    %h3
+      = t('products.title')
+    .line
+  .products__list.pure-g
+    - left = true
+    - data.soap.en.each do |product|
+      .pure-u-1.pure-u-sm-1-2
+        - if left
+          .product-body.left
+            = partial(:product_item, :locals => {:name => product[:name], :type => product[:type], :ingredients => product[:ingredients], :description => product[:description]})
+            - left = false
+        - else
+          .product-body.right
+            = partial(:product_item, :locals => {:name => product[:name], :type => product[:type], :ingredients => product[:ingredients], :description => product[:description]})
+            - left = true
+
+  .products__footer
+    = image_tag 'arrow.svg'

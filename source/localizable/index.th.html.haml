@@ -1,63 +1,9 @@
 .container
   .pure-menu.pure-menu-horizontal
-    %ul.pure-menu-list 
+    %ul.pure-menu-list
       %li.pure-menu-item.pure-menu-selected
         = link_to "EN", '/', class: 'pure-menu-link'
       %li.pure-menu-item
         = link_to "TH", '/th', class: 'pure-menu-link'
-  
-  .hero__wrap
-    = image_tag 'logo.png', :class => 'logo'
-    .hero__title
-      %h1
-        = t('hero.title')
-    .hero__subtitle
-      = t('hero.subtitle')
-    .hero__buttons
-      = link_to t('hero.products_button'),"#products" , :class => "pure-button"
-      = link_to t('hero.about_us_button'), "#about_us", :title => "read about us", :class => 'secondary-button'
-  
-  #about_us.about_us__wrap
-    = t(:about_us)
-  #products.products__wrap
-    .products__title
-      .line
-      %h3
-        = t('products.title')
-      .line
-    .products__list.pure-g
-      .pure-u-1-2
-        .product-body.left
-          .product-field
-            Mint Soap
-          .product-field.nth
-            For normal, sensitive and mature skin types
-          .product-field
-            soap herbal products exfoliate, remove dead skin cells, absorb toxins and remove impurities from the skin pores
-          .product-field.nth
-            jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water, lye
-          
-      .pure-u-1-2
-        .product-body.right
-          .product-field
-            Coffee Soap
-          .product-field.nth
-            for normal, sensitive and mature skin types
-          .product-field 
-            coffee is readily absorbed by the skin and has an extremely light and silky feel. Coffee oil is known as anti-inflammatory, skin-softening and its excellent moisture retention properties. Scrub your skin smooth with the coffee side to leave skin soft.
-          .product-field.nth
-            coffee beans, palm oil, coconut oil, castor oil, olive oil, canola oil, tamarind, honey
-        
-      
-    .products__footer
-      = image_tag 'arrow.svg'
-  .footer__wrap
-    %p
-      = t('footer.contact_us')
-    .social
-      = link_to 'mailto:hello@soihok.com' do
-        = image_tag 'mail.svg', :width=> '20'
-      = link_to 'https://www.facebook.com/WiangpingLanna/' do
-        = image_tag 'facebook.svg', :width=> '20'
-      .line-it-button{"data-lang" => "en", "data-lineid" => "@soihok6", "data-type" => "friend", :style => "display: none;"}
-      %script{:async => "async", :defer => "defer", :src => "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"}
+
+  = partial "content"
