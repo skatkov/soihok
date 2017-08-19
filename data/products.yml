@@ -1,0 +1,53 @@
+en:
+  [
+    {
+      name: "Coffee Soap",
+      type: "for normal, sensitive and mature skin types",
+      ingredients: "coffee beans, palm oil, coconut oil, castor oil, olive oil, canola oil, tamarind, honey",
+      description: "coffee is readily absorbed by the skin and has an extremely light and silky feel. Coffee oil is known as anti-inflammatory, skin-softening and its excellent moisture retention properties. Scrub your skin smooth with the coffee side to leave skin soft.",
+      weight: 70g,
+      price: '3$'
+    },
+    {
+      name: "Mint Soap",
+      type: "for normal, sensitive and mature skin types",
+      ingredients: "mint, jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water, lye",
+      description: "soap herbal products exfoliate, remove dead skin cells, absorb toxins and remove impurities from the skin pores",
+      weight: 70g,
+      price: '3$'
+    },
+    {
+      name: "Honey Soap",
+      type: "for normal, sensitive and mature skin types",
+      ingredients: "honey, jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water, lye",
+      description: "Effective antimicrobial agent in honey prohibits the growth o certain backteria. Honey soap can help treat minor acne by attacking backteria that cause outbreaks while moisturizing skin to aid rejunivation",
+      weight: 70g,
+      price: '3$'
+    },
+    {
+      name: "Tumeric Soap",
+      type: "for normal, sensitive and mature skin types",
+      ingredients: "Tumeric, jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water, lye",
+      description: "Turmeric is effective in the treatment of acne due to it's antiseptic and antibacterial properties that fight pimples and breakouts to provide a youthful glow to your skin",
+      weight: 70g,
+      price: '3$'
+    },
+    {
+      name: "Aloe Soap",
+      type: "for normal, sensitive and mature skin types",
+      ingredients: "Aloe, jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water, lye",
+      description: "These are good for the skin and nourish your skin from within, giving you the skin that glows with health and sunburn",
+      weight: 70g,
+      price: '3$'
+    },
+    {
+      name: "Jasmine Herbal Balm",
+      description: "For relief of muscular rheumatism, strains, headache, inspect bites or strings, sprains, nasal congestion.",
+      price: '3$'
+    },
+    {
+      name: "Mango Herbal Balm",
+      description: "For relief of muscular rheumatism, strains, headache, inspect bites or strings, sprains, nasal congestion.",
+      price: '3$'
+    }
+  ]
