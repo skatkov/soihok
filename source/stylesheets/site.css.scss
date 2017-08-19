@@ -11,7 +11,7 @@ $dark: #1C140D;
 
 @mixin title-radius(){
   font-size: .875rem;
-  border-radius: 6px;  
+  border-radius: 6px;
   text-align: center;
 }
 
@@ -87,10 +87,11 @@ a:hover {
   padding-top: 4em;
 }
 
+
 .products__wrap {
   padding-bottom: 2em;
   padding-top: 4em;
-  
+
   .field-name {
     background-color: $grey;
     @include title-radius();
@@ -100,10 +101,10 @@ a:hover {
   .field-content {
     padding-top: .875rem;
   }
-  
+
   .nth {
     background-color: $grey;
-    
+
     .field-name {
       background-color: $white;
       @include title-radius();
@@ -112,9 +113,17 @@ a:hover {
   }
   .product-body.left {
     margin-right: 25px;
+    @media screen and (max-width: 48em) {
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+    }
   }
   .product-body.right {
     margin-left: 25px;
+    @media screen and (max-width: 48em) {
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+    }
   }
   .product-body {
     border: 1px solid $grey;
