@@ -12,6 +12,12 @@ pipelines:
           - bundler
         script: # Modify the commands below to build your repository.
           - bundle install
+  branches:
+    master:
+      - step:
+          script:
+            - bundle exec middleman build
+            - bundle exec middleman s3_sync
 
 definitions:
   caches:
