@@ -11,11 +11,14 @@ pipelines:
         caches:
           - bundler
         script: # Modify the commands below to build your repository.
+          - gem install bundler
           - bundle install
   branches:
     master:
       - step:
           script:
+            - gem install bundler
+            - bundle install
             - bundle exec middleman build
             - bundle exec middleman s3_sync
 
