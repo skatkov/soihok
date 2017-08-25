@@ -131,12 +131,13 @@ a:hover {
     margin-top: 1.875rem;
     padding: 15px;
     position: relative;
+    box-shadow: 5px 5px $grey;
   }
 
-  .product-item:hover>.pi-img-wrapper>div {
+  .product-item:hover>.img-wrapper>div {
     display: block;
   }
-  .pi-img-wrapper div .pure-button {
+  .img-wrapper div .pure-button {
     padding: 3px 10px;
     color: #fff;
     border: 1px #fff solid;
@@ -161,10 +162,6 @@ a:hover {
     margin: 0px;
   }
 
-  .product-item:hover {
-    box-shadow: 5px 5px $grey;
-  }
-
   .product-item:after {
     content: ".";
     display: block;
@@ -175,17 +172,17 @@ a:hover {
     line-height:0;
   }
 
-  .pi-price {
+  .price {
     color: $special;
     float: left;
     padding-top: 1px;
   }
 
-  .pi-img-wrapper {
+  .img-wrapper {
     position: relative;
   }
 
-  .pi-img-wrapper div {
+  .img-wrapper div {
     position: absolute;
     left: 0;
     top: 0;
