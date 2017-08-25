@@ -1,0 +1,10 @@
+@mixin upcase-text(){
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+@mixin title-radius(){
+  font-size: .875rem;
+  border-radius: 6px;
+  text-align: center;
+}
