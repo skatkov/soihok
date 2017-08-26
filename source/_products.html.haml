@@ -10,11 +10,11 @@
       .pure-u-1.pure-u-md-1-2
         - if left
           .product-item.left
-            = partial(:product_item, :locals => {:name => product[:name], :type => product[:type], :ingredients => product[:ingredients], :description => product[:description], :price => product[:price]})
+            = partial(:product_item, :locals => {:name => product[:name], :type => product[:type], :ingredients => product[:ingredients], :description => product[:description], :price => product[:price], :photo => product[:photo]})
             - left = false
         - else
           .product-item.right
-            = partial(:product_item, :locals => {:name => product[:name], :type => product[:type], :ingredients => product[:ingredients], :description => product[:description], :price => product[:price]})
+            = partial(:product_item, :locals => {:name => product[:name], :type => product[:type], :ingredients => product[:ingredients], :description => product[:description], :price => product[:price], :photo => product[:photo]})
             - left = true
 
   .products__footer
