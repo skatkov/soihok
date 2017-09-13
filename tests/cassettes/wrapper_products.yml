@@ -1,0 +1,129 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://soihok.prismic.io/api
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Sep 2017 21:05:56 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      X-Local-Cache:
+      - MISS
+      Content-Length:
+      - '961'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"refs":[{"id":"master","ref":"WbkY5CkAAGKMkyt7","label":"Master","isMasterRef":true}],"bookmarks":{},"types":{"product":"product"},"tags":[],"forms":{"everything":{"method":"GET","enctype":"application/x-www-form-urlencoded","action":"https://soihok.prismic.io/api/v1/documents/search","fields":{"ref":{"type":"String","multiple":false},"q":{"type":"String","multiple":true},"lang":{"type":"String","multiple":false},"page":{"type":"Integer","multiple":false,"default":"1"},"pageSize":{"type":"Integer","multiple":false,"default":"20"},"after":{"type":"String","multiple":false},"fetch":{"type":"String","multiple":false},"fetchLinks":{"type":"String","multiple":false},"orderings":{"type":"String","multiple":false},"referer":{"type":"String","multiple":false}}}},"oauth_initiate":"https://soihok.prismic.io/auth","oauth_token":"https://soihok.prismic.io/auth/token","version":"622a253","license":"All
+        Rights Reserved","experiments":{"draft":[],"running":[]}}'
+    http_version: 
+  recorded_at: Wed, 13 Sep 2017 21:05:57 GMT
+- request:
+    method: get
+    uri: https://soihok.prismic.io/api/v1/documents/search?page=1&pageSize=20&q=%5B%5B:d%20=%20at(document.type,%20%22product%22)%5D%5D&ref=WbkY5CkAAGKMkyt7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=315360000
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Wed, 13 Sep 2017 21:05:58 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"results_per_page":20,"results_size":7,"total_results_size":7,"total_pages":1,"next_page":null,"prev_page":null,"results":[{"id":"WbkW1CkAAC16kyJe","uid":null,"type":"product","href":"https://soihok.prismic.io/api/v1/documents/search?ref=WbkY5CkAAGKMkyt7&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WbkW1CkAAC16kyJe%22%29+%5D%5D","tags":[],"first_publication_date":"2017-09-13T11:30:57+0000","last_publication_date":"2017-09-13T11:30:57+0000","slugs":["mango-herbal-balm","jasmine-herbal-balm"],"linked_documents":[],"lang":"en-us","alternate_languages":[],"data":{"product":{"name":{"type":"StructuredText","value":[{"type":"heading1","text":"Mango
+        Herbal Balm","spans":[]}]},"type":{"type":"StructuredText","value":[{"type":"paragraph","text":"","spans":[]}]},"ingredients":{"type":"StructuredText","value":[{"type":"paragraph","text":"","spans":[]}]},"description":{"type":"StructuredText","value":[{"type":"paragraph","text":"For
+        relief of muscular rheumatism, strains, headache, inspect bites or strings,
+        sprains, nasal congestion.","spans":[]}]},"price":{"type":"StructuredText","value":[{"type":"paragraph","text":"79
+        thb","spans":[]}]},"photo":{"type":"Image","value":{"main":{"dimensions":{"width":600,"height":550},"alt":null,"copyright":null,"url":"https://prismic-io.s3.amazonaws.com/soihok/8d7673eac72e34277d0de21a04a8e75271b10a40_600x550.png"},"views":{}}}}}},{"id":"WbkWeCkAANyGkyC8","uid":null,"type":"product","href":"https://soihok.prismic.io/api/v1/documents/search?ref=WbkY5CkAAGKMkyt7&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WbkWeCkAANyGkyC8%22%29+%5D%5D","tags":[],"first_publication_date":"2017-09-13T11:31:36+0000","last_publication_date":"2017-09-13T11:31:36+0000","slugs":["aloe-soap","tumeric-soap"],"linked_documents":[],"lang":"en-us","alternate_languages":[],"data":{"product":{"name":{"type":"StructuredText","value":[{"type":"heading1","text":"Aloe
+        Soap","spans":[]}]},"type":{"type":"StructuredText","value":[{"type":"paragraph","text":"for
+        normal, sensitive and mature skin types","spans":[]}]},"ingredients":{"type":"StructuredText","value":[{"type":"paragraph","text":"Aloe,
+        jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water,
+        lye","spans":[]}]},"description":{"type":"StructuredText","value":[{"type":"paragraph","text":"These
+        are good for the skin and nourish your skin from within, giving you the skin
+        that glows with health and sunburn","spans":[]}]},"weight":{"type":"Number","value":70.0},"price":{"type":"StructuredText","value":[{"type":"paragraph","text":"79
+        thb","spans":[]}]},"photo":{"type":"Image","value":{"main":{"dimensions":{"width":600,"height":550},"alt":null,"copyright":null,"url":"https://prismic-io.s3.amazonaws.com/soihok/8d7673eac72e34277d0de21a04a8e75271b10a40_600x550.png"},"views":{}}}}}},{"id":"WbkAVikAANyGkr8a","uid":null,"type":"product","href":"https://soihok.prismic.io/api/v1/documents/search?ref=WbkY5CkAAGKMkyt7&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WbkAVikAANyGkr8a%22%29+%5D%5D","tags":[],"first_publication_date":"2017-09-13T11:39:06+0000","last_publication_date":"2017-09-13T11:39:06+0000","slugs":["tumeric-soap","honey-soap"],"linked_documents":[],"lang":"en-us","alternate_languages":[],"data":{"product":{"name":{"type":"StructuredText","value":[{"type":"heading1","text":"Tumeric
+        Soap","spans":[]}]},"type":{"type":"StructuredText","value":[{"type":"paragraph","text":"for
+        normal, sensitive and mature skin types","spans":[]}]},"ingredients":{"type":"StructuredText","value":[{"type":"paragraph","text":"Tumeric,
+        jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water,
+        lye","spans":[]}]},"description":{"type":"StructuredText","value":[{"type":"paragraph","text":"Turmeric
+        is effective in the treatment of acne due to it''s antiseptic and antibacterial
+        properties that fight pimples and breakouts to provide a youthful glow to
+        your skin","spans":[]}]},"weight":{"type":"Number","value":70.0},"price":{"type":"StructuredText","value":[{"type":"paragraph","text":"79
+        thb","spans":[]}]},"photo":{"type":"Image","value":{"main":{"dimensions":{"width":600,"height":550},"alt":null,"copyright":null,"url":"https://prismic-io.s3.amazonaws.com/soihok/8d7673eac72e34277d0de21a04a8e75271b10a40_600x550.png"},"views":{}}}}}},{"id":"WbkADCkAAC16kr3H","uid":null,"type":"product","href":"https://soihok.prismic.io/api/v1/documents/search?ref=WbkY5CkAAGKMkyt7&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WbkADCkAAC16kr3H%22%29+%5D%5D","tags":[],"first_publication_date":"2017-09-13T11:38:55+0000","last_publication_date":"2017-09-13T11:38:55+0000","slugs":["honey-soap","mint-soap"],"linked_documents":[],"lang":"en-us","alternate_languages":[],"data":{"product":{"name":{"type":"StructuredText","value":[{"type":"heading1","text":"Honey
+        Soap","spans":[]}]},"type":{"type":"StructuredText","value":[{"type":"paragraph","text":"for
+        normal, sensitive and mature skin types","spans":[]}]},"ingredients":{"type":"StructuredText","value":[{"type":"paragraph","text":"honey,
+        jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water,
+        lye","spans":[]}]},"description":{"type":"StructuredText","value":[{"type":"paragraph","text":"Effective
+        antimicrobial agent in honey prohibits the growth o certain backteria. Honey
+        soap can help treat minor acne by attacking backteria that cause outbreaks
+        while moisturizing skin to aid rejunivation","spans":[]}]},"weight":{"type":"Number","value":70.0},"price":{"type":"StructuredText","value":[{"type":"paragraph","text":"79
+        thb","spans":[]}]},"photo":{"type":"Image","value":{"main":{"dimensions":{"width":600,"height":550},"alt":null,"copyright":null,"url":"https://prismic-io.s3.amazonaws.com/soihok/8d7673eac72e34277d0de21a04a8e75271b10a40_600x550.png"},"views":{}}}}}},{"id":"WbkWnikAADB6kyFn","uid":null,"type":"product","href":"https://soihok.prismic.io/api/v1/documents/search?ref=WbkY5CkAAGKMkyt7&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WbkWnikAADB6kyFn%22%29+%5D%5D","tags":[],"first_publication_date":"2017-09-13T11:31:08+0000","last_publication_date":"2017-09-13T11:31:08+0000","slugs":["jasmine-herbal-balm","aloe-soap"],"linked_documents":[],"lang":"en-us","alternate_languages":[],"data":{"product":{"name":{"type":"StructuredText","value":[{"type":"heading1","text":"Jasmine
+        Herbal Balm","spans":[]}]},"type":{"type":"StructuredText","value":[{"type":"paragraph","text":"","spans":[]}]},"ingredients":{"type":"StructuredText","value":[{"type":"paragraph","text":"","spans":[]}]},"description":{"type":"StructuredText","value":[{"type":"paragraph","text":"For
+        relief of muscular rheumatism, strains, headache, inspect bites or strings,
+        sprains, nasal congestion.","spans":[]}]},"price":{"type":"StructuredText","value":[{"type":"paragraph","text":"79
+        thb","spans":[]}]},"photo":{"type":"Image","value":{"main":{"dimensions":{"width":600,"height":550},"alt":null,"copyright":null,"url":"https://prismic-io.s3.amazonaws.com/soihok/8d7673eac72e34277d0de21a04a8e75271b10a40_600x550.png"},"views":{}}}}}},{"id":"Wbj_tCkAAGKMkrxC","uid":null,"type":"product","href":"https://soihok.prismic.io/api/v1/documents/search?ref=WbkY5CkAAGKMkyt7&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22Wbj_tCkAAGKMkrxC%22%29+%5D%5D","tags":[],"first_publication_date":"2017-09-13T11:28:44+0000","last_publication_date":"2017-09-13T11:28:44+0000","slugs":["coffee-soap"],"linked_documents":[],"lang":"en-us","alternate_languages":[],"data":{"product":{"name":{"type":"StructuredText","value":[{"type":"heading1","text":"Coffee
+        Soap","spans":[]}]},"type":{"type":"StructuredText","value":[{"type":"paragraph","text":"for
+        normal, sensitive and mature skin types","spans":[]}]},"ingredients":{"type":"StructuredText","value":[{"type":"paragraph","text":"coffee
+        beans, palm oil, coconut oil, castor oil, olive oil, canola oil, tamarind,
+        honey","spans":[]}]},"description":{"type":"StructuredText","value":[{"type":"paragraph","text":"coffee
+        is readily absorbed by the skin and has an extremely light and silky feel.
+        Coffee oil is known as anti-inflammatory, skin-softening and its excellent
+        moisture retention properties. Scrub your skin smooth with the coffee side
+        to leave skin soft.","spans":[]}]},"weight":{"type":"Number","value":70.0},"price":{"type":"StructuredText","value":[{"type":"paragraph","text":"79
+        thb","spans":[]}]},"photo":{"type":"Image","value":{"main":{"dimensions":{"width":600,"height":550},"alt":null,"copyright":null,"url":"https://prismic-io.s3.amazonaws.com/soihok/8d7673eac72e34277d0de21a04a8e75271b10a40_600x550.png"},"views":{}}}}}},{"id":"Wbj__ykAADB6kr2P","uid":null,"type":"product","href":"https://soihok.prismic.io/api/v1/documents/search?ref=WbkY5CkAAGKMkyt7&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22Wbj__ykAADB6kr2P%22%29+%5D%5D","tags":[],"first_publication_date":"2017-09-13T11:39:16+0000","last_publication_date":"2017-09-13T11:39:16+0000","slugs":["mint-soap"],"linked_documents":[],"lang":"en-us","alternate_languages":[],"data":{"product":{"name":{"type":"StructuredText","value":[{"type":"heading1","text":"Mint
+        Soap","spans":[]}]},"type":{"type":"StructuredText","value":[{"type":"paragraph","text":"for
+        normal, sensitive and mature skin types","spans":[]}]},"ingredients":{"type":"StructuredText","value":[{"type":"paragraph","text":"mint,
+        jojoba oil, palm oil, coconut oil, castor oil, olive oil, canola oil, water,
+        lye","spans":[]}]},"description":{"type":"StructuredText","value":[{"type":"paragraph","text":"soap
+        herbal products exfoliate, remove dead skin cells, absorb toxins and remove
+        impurities from the skin pores","spans":[]}]},"weight":{"type":"Number","value":70.0},"price":{"type":"StructuredText","value":[{"type":"paragraph","text":"79","spans":[]}]},"photo":{"type":"Image","value":{"main":{"dimensions":{"width":600,"height":550},"alt":null,"copyright":null,"url":"https://prismic-io.s3.amazonaws.com/soihok/8d7673eac72e34277d0de21a04a8e75271b10a40_600x550.png"},"views":{}}}}}}],"version":"622a253","license":"All
+        Rights Reserved"}'
+    http_version: 
+  recorded_at: Wed, 13 Sep 2017 21:05:58 GMT
+recorded_with: VCR 3.0.3

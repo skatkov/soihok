@@ -3,7 +3,9 @@ require_relative '../../lib/prismic_wrapper'
 
 class PrismicWrapperTest < Minitest::Test
   def test_wrapper
-    products = PrismicWrapper.products
-    assert_equal 7, products.count
+    VCR.use_cassette('wrapper_products') do |variable|
+      products = PrismicWrapper.new.products
+      assert_equal 7, products.count
+    end
   end
 end

@@ -17,3 +17,5 @@ gem 'pry'
 
 gem 'minitest'
 gem 'rake'
+gem 'vcr'
+gem 'webmock'

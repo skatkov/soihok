@@ -4,12 +4,15 @@ require 'time'
 
 class PrismicWrapper
   PRODUCT_TYPE = 'product'
-
+  API_URL = 'https://soihok.prismic.io/api'
   Product = Struct.new(:name, :photo, :description, :type, :price, :ingredients)
 
-  def self.products
-    @api = Prismic.api('https://soihok.prismic.io/api')
-    @api.query(Prismic::Predicates.at('document.type', PRODUCT_TYPE)).map do |product|
+  def initialize
+    @api = Prismic.api(API_URL)
+  end
+
+  def products
+    api.query(Prismic::Predicates.at('document.type', PRODUCT_TYPE)).map do |product|
       fragments = product.fragments
       Product.new(
           fragments['name'].blocks.first.text,
@@ -21,4 +24,8 @@ class PrismicWrapper
         )
     end
   end
+
+  private
+
+  attr_reader :api
 end
