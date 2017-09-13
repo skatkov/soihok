@@ -11,17 +11,16 @@ activate :i18n, mount_at_root: :en, langs: [:en, :th]
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
-
 # Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'www.soihok.com' # The name of the S3 bucket you are targeting. This is globally unique.
-  s3_sync.region                     = 'ap-southeast-1' # The AWS region for your bucket.
-  s3_sync.aws_access_key_id          = ENV['AWS_ACCESS_KEY']
-  s3_sync.aws_secret_access_key      = ENV['AWS_ACCESS_SECRET']
+  s3_sync.bucket                     = ENV.fetch('AWS_BUCKET') # The name of the S3 bucket you are targeting. This is globally unique.
+  s3_sync.region                     = ENV.fetch('AWS_REGION') # The AWS region for your bucket.
+  s3_sync.aws_access_key_id          = ENV.fetch('AWS_ACCESS_KEY')
+  s3_sync.aws_secret_access_key      = ENV.fetch('AWS_ACCESS_SECRET')
   s3_sync.delete                     = false # We delete stray files by default.
   s3_sync.after_build                = false # We do not chain after the build step by default.
   s3_sync.prefer_gzip                = true
