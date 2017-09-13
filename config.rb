@@ -17,8 +17,8 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = ENV.fetch('AWS_BUCKET') # The name of the S3 bucket you are targeting. This is globally unique.
-  s3_sync.region                     = ENV.fetch('AWS_REGION') # The AWS region for your bucket.
+  s3_sync.bucket                     = ENV.fetch('AWS_BUCKET', 'www.soihok.com') # The name of the S3 bucket you are targeting. This is globally unique.
+  s3_sync.region                     = ENV.fetch('AWS_REGION', 'ap-southeast-1') # The AWS region for your bucket.
   s3_sync.aws_access_key_id          = ENV.fetch('AWS_ACCESS_KEY')
   s3_sync.aws_secret_access_key      = ENV.fetch('AWS_ACCESS_SECRET')
   s3_sync.delete                     = false # We delete stray files by default.
@@ -61,7 +61,7 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end
