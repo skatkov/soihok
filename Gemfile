@@ -11,6 +11,9 @@ gem 'therubyracer',  platforms: :ruby
 gem 'mime-types' #required by middleman-d3_sync
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
-group :development, :test do
-  gem 'pry'
-end
+
+gem 'prismic.io', '~> 1.4.1', require: 'prismic'
+gem 'pry'
+
+gem 'minitest'
+gem 'rake'

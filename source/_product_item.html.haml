@@ -1,31 +1,31 @@
 .img-wrapper
-  %img.pure-img{:alt => "#{name}", :src => "#{photo}"}/
+  %img.pure-img{:alt => "#{product.name}", :src => "#{product.photo}"}/
   %div
-    %a.pure-button{:href => "#modal-#{name}"} View
+    %a.pure-button{:href => "#modal-#{product.name}"} View
 
 %h3
-  = name
+  = product.name
 .price
-  = price
+  = product.price
 /.pure-button.add2cart{:href => "javascript:;"} Add to cart
 
-%section.modal--show{"id"=>"modal-#{name}", "aria-hidden" => "true", "aria-labelledby" => "modal-label", :role => "dialog", :tabindex => "-1"}
+%section.modal--show{"id"=>"modal-#{product.name}", "aria-hidden" => "true", "aria-labelledby" => "modal-label", :role => "dialog", :tabindex => "-1"}
   .modal-inner
     %header#modal-label
-      = name
+      = product.name
     .modal-content
       %b Description
       %br
-      = description
+      = product.description
       %br
       %b Type
       %br
-      = type
+      = product.type
       %br
       %b Ingredients
       %br
-      = ingredients
+      = product.ingredients
 
     %footer
-      = price
+      = product.price
   %a.modal-close{"data-close" => "Close", "data-dismiss" => "modal", :href => "#!", :title => "Close this modal"} ?
