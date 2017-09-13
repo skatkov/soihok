@@ -6,8 +6,8 @@
   .hero__subtitle
     = t('hero.subtitle')
   .hero__buttons
-    = link_to t('hero.products_button'),"#products" , :class => "pure-button"
-    = link_to t('hero.about_us_button'), "#about_us", :title => "read about us", :class => 'secondary-button'
+    = link_to t('hero.products_button'),"#products" , :class => "pure-button", :onclick => "Jump('#products')"
+    = link_to t('hero.about_us_button'), "#about_us", :title => "read about us", :class => 'secondary-button', :onclick => "Jump('#about_us')"
 
 #about_us.about_us__wrap
   = t(:about_us)
