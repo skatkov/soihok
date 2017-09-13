@@ -10,6 +10,7 @@ cache:
 
 
 script:
+  - rake test
   - 'if [ ${TRAVIS_BRANCH} = "master" ]; then
         bundle exec middleman build --no-parallel;
         bundle exec middleman s3_sync;
