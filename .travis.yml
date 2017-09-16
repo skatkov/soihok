@@ -6,7 +6,7 @@ cache:
   directories:
     - node_modules
     - $TRAVIS_BUILD_DIR/build
-    - $TRAVIS_BUILD_DIR/data/contenido
+    - $TRAVIS_BUILD_DIR/data
 
 
 script:
