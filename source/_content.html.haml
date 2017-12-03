@@ -12,7 +12,7 @@
 #about_us.about_us__wrap
   = t(:about_us)
 
-= partial(:products)
+= partial(:products, :locals => { lang: lang })
 
 .footer__wrap
   %p

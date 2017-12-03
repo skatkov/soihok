@@ -6,7 +6,7 @@
 #products.products__wrap
   .products__list.pure-g
     - left = true
-    - PrismicWrapper.new.products.each do |product|
+    - PrismicWrapper.new.products(lang).each do |product|
       .pure-u-1.pure-u-md-1-2
         - if left
           .product-item.left

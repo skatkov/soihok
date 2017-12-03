@@ -11,16 +11,16 @@ class PrismicWrapper
     @api = Prismic.api(API_URL)
   end
 
-  def products
-    api.query(Prismic::Predicates.at('document.type', PRODUCT_TYPE)).map do |product|
+  def products(language = '*')
+    api.query(Prismic::Predicates.at('document.type', PRODUCT_TYPE), {"lang" => language}).map do |product|
       fragments = product.fragments
       Product.new(
           fragments['name'].blocks.first.text,
           fragments['photo'].url,
           fragments['description'].blocks.first.text,
-          fragments['type'].blocks.first.text,
+          #fragments['type'].blocks.first.text,
           fragments['price'].blocks.first.text,
-          fragments['ingredients'].blocks.first.text
+          #fragments['ingredients'].blocks.first.text
         )
     end
   end
